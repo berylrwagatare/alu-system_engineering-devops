@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 - Lost in space</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+         background: radial-gradient(circle at 50% 30%, #1b2a5a, #070b1c); color: #fff;
+         font-family: Arial, Helvetica, sans-serif; text-align: center; overflow: hidden; }
+  .box { position: relative; z-index: 2; padding: 20px; }
+  h1 { font-size: 9rem; margin: 0; letter-spacing: 10px; text-shadow: 0 0 25px #6c8cff; }
+  p { font-size: 1.3rem; margin: 10px 0; }
+  .small { opacity: .7; font-size: 1rem; }
+  a { display: inline-block; margin-top: 25px; padding: 12px 30px; border-radius: 30px;
+      background: #6c8cff; color: #fff; text-decoration: none; transition: transform .2s; }
+  a:hover { transform: scale(1.08); }
+  .astro { font-size: 5rem; animation: float 4s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform: translateY(0) rotate(-8deg); } 50% { transform: translateY(-25px) rotate(8deg); } }
+  .star { position: absolute; width: 3px; height: 3px; background: #fff; border-radius: 50%; animation: blink 3s infinite; }
+  @keyframes blink { 50% { opacity: .15; } }
+</style>
+</head>
+<body>
+  <div class="star" style="top:10%;left:15%"></div>
+  <div class="star" style="top:25%;left:80%;animation-delay:1s"></div>
+  <div class="star" style="top:70%;left:25%;animation-delay:2s"></div>
+  <div class="star" style="top:80%;left:70%;animation-delay:.5s"></div>
+  <div class="star" style="top:45%;left:92%;animation-delay:1.5s"></div>
+  <div class="box">
+    <div class="astro">&#128104;&#8205;&#128640;</div>
+    <h1>404</h1>
+    <p>Ceci n'est pas une page</p>
+    <p class="small">This page drifted off into space. Let's get you back home.</p>
+    <a href="/">Back to Earth</a>
+  </div>
+</body>
+</html>
